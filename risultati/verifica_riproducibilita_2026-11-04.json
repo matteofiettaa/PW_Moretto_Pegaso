@@ -1,0 +1,79 @@
+{
+  "data": "2026-11-04",
+  "ambiente": "Python 3.12.6, ambiente locale esistente",
+  "script": [
+    {
+      "file": "02_dataset/genera_dataset.py",
+      "exit_code": 0,
+      "output": "Righe del dataset: 144\nPrima riga: {'mese': '2023-11', 'materiale': 'alluminio', 'consumo_kg': 40603, 'lead_time_mesi': 3}\nFile salvato: domanda_sintetica.csv\n",
+      "stderr": ""
+    },
+    {
+      "file": "03_forecasting/confronto_metodi.py",
+      "exit_code": 0,
+      "output": "alluminio - media - MAE: 3994.92 - RMSE: 4122.81 kg\nalluminio - stagionale - MAE: 3012.33 - RMSE: 3292.14 kg\nalluminio - cmm3 - MAE: 2273.08 - RMSE: 2491.01 kg\nalluminio - trend - MAE: 1209.6 - RMSE: 1374.89 kg\nacciaio_carbonio - media - MAE: 13957.89 - RMSE: 17410.61 kg\nacciaio_carbonio - stagionale - MAE: 8990.08 - RMSE: 10005.21 kg\nacciaio_carbonio - cmm3 - MAE: 14527.36 - RMSE: 18324.85 kg\nacciaio_carbonio - trend - MAE: 15589.89 - RMSE: 20010.12 kg\nacciaio_inox - media - MAE: 1118.81 - RMSE: 1344.4 kg\nacciaio_inox - stagionale - MAE: 1237.25 - RMSE: 1565.49 kg\nacciaio_inox - cmm3 - MAE: 1605.92 - RMSE: 1828.31 kg\nacciaio_inox - trend - MAE: 1455.45 - RMSE: 1667.98 kg\nrame - media - MAE: 110.38 - RMSE: 123.76 kg\nrame - stagionale - MAE: 112.42 - RMSE: 152.13 kg\nrame - cmm3 - MAE: 103.08 - RMSE: 115.53 kg\nrame - trend - MAE: 126.47 - RMSE: 145.99 kg\nRisultati salvati: confronto_metodi.csv\nCombinazioni salvate: 16\nalluminio - metodo selezionato: trend - MAE: 1209.6 kg\nacciaio_carbonio - metodo selezionato: stagionale - MAE: 8990.08 kg\nacciaio_inox - metodo selezionato: media - MAE: 1118.81 kg\nrame - metodo selezionato: cmm3 - MAE: 103.08 kg\nMetodi salvati: metodi_selezionati.csv\n",
+      "stderr": ""
+    },
+    {
+      "file": "03_forecasting/previsioni_future.py",
+      "exit_code": 0,
+      "output": "Righe storiche lette: 144\nMetodi caricati: {'alluminio': 'trend', 'acciaio_carbonio': 'stagionale', 'acciaio_inox': 'media', 'rame': 'cmm3'}\nMesi da prevedere: 18\nPrima previsione: 2026-11\nUltima previsione: 2028-04\nalluminio - metodo: trend - prima previsione: 47261.02 - ultima previsione: 50692.15 kg\nacciaio_carbonio - metodo: stagionale - prima previsione: 217186 - ultima previsione: 191543 kg\nacciaio_inox - metodo: media - prima previsione: 9753.61 - ultima previsione: 9753.61 kg\nrame - metodo: cmm3 - prima previsione: 1948.67 - ultima previsione: 1948.67 kg\nFile salvato: previsioni_future.csv\nPrevisioni salvate: 72\n",
+      "stderr": ""
+    },
+    {
+      "file": "04_scorte/pianificazione_scorte.py",
+      "exit_code": 0,
+      "output": "Revisione ogni: 1 mese\nLivello di servizio obiettivo: 95.0 %\nPesi nominali dei coil in kg: {'alluminio': 5000, 'acciaio_carbonio': 10000, 'acciaio_inox': 2000, 'rame': 500}\nPrevisioni caricate: 72\nLead time in mesi: {'alluminio': 3, 'acciaio_carbonio': 2, 'acciaio_inox': 1, 'rame': 6}\nalluminio - copertura: 4 mesi - domanda prevista: 190255.06 kg\nacciaio_carbonio - copertura: 3 mesi - domanda prevista: 598414.0 kg\nacciaio_inox - copertura: 2 mesi - domanda prevista: 19507.22 kg\nrame - copertura: 7 mesi - domanda prevista: 13640.67 kg\nCoefficiente di sicurezza: 1.645\nalluminio - errori mensili calcolati: 12\nacciaio_carbonio - errori mensili calcolati: 12\nacciaio_inox - errori mensili calcolati: 12\nrame - errori mensili calcolati: 12\nalluminio - errore medio: 209.59 - deviazione standard: 1300.64 kg\nacciaio_carbonio - errore medio: -4128.08 - deviazione standard: 9519.16 kg\nacciaio_inox - errore medio: -302.65 - deviazione standard: 1374.07 kg\nrame - errore medio: -8.86 - deviazione standard: 135.66 kg\nalluminio - scorta di sicurezza: 4278.73 kg\nacciaio_carbonio - scorta di sicurezza: 27119.8 kg\nacciaio_inox - scorta di sicurezza: 3196.32 kg\nrame - scorta di sicurezza: 590.38 kg\nalluminio - livello obiettivo: 194533.79 kg\nacciaio_carbonio - livello obiettivo: 625533.8 kg\nacciaio_inox - livello obiettivo: 22703.55 kg\nrame - livello obiettivo: 14231.05 kg\nalluminio - coil da ordinare: 9 - quantità: 45000 kg\nacciaio_carbonio - coil da ordinare: 18 - quantità: 180000 kg\nacciaio_inox - coil da ordinare: 4 - quantità: 8000 kg\nrame - coil da ordinare: 3 - quantità: 1500 kg\nPiano salvato: pianificazione_iniziale.csv\nMateriali pianificati: 4\nalluminio - scorta ciclica media di riferimento: 24185.54 kg\nacciaio_carbonio - scorta ciclica media di riferimento: 99100.21 kg\nacciaio_inox - scorta ciclica media di riferimento: 4876.81 kg\nrame - scorta ciclica media di riferimento: 974.33 kg\n",
+      "stderr": ""
+    },
+    {
+      "file": "04_scorte/simulazione_scorte.py",
+      "exit_code": 0,
+      "output": "Previsioni caricate: 72\nMateriali caricati: 4\nMesi da simulare: 12\nalluminio - mesi disponibili: 18 - primo mese: 2026-11 - ultimo mese: 2028-04\nacciaio_carbonio - mesi disponibili: 18 - primo mese: 2026-11 - ultimo mese: 2028-04\nacciaio_inox - mesi disponibili: 18 - primo mese: 2026-11 - ultimo mese: 2028-04\nrame - mesi disponibili: 18 - primo mese: 2026-11 - ultimo mese: 2028-04\nRighe simulate: 48\nPrima riga: {'mese': '2026-11', 'materiale': 'alluminio', 'domanda_kg': 47261.01746031746, 'arrivi_kg': 0.0, 'numero_coil_ordinati': 9, 'ordine_kg': 45000.0, 'giacenza_fine_kg': 102738.98253968253, 'arretrati_fine_kg': 0, 'pipeline_fine_kg': 45000.0, 'livello_obiettivo_kg': 194533.79109344125}\nSimulazione salvata: simulazione_scorte.csv\nalluminio - bilanci corretti - mesi con arretrati: 0\nacciaio_carbonio - bilanci corretti - mesi con arretrati: 0\nacciaio_inox - bilanci corretti - mesi con arretrati: 0\nrame - bilanci corretti - mesi con arretrati: 0\nGrafico salvato: scorte_alluminio.png\nGrafico salvato: scorte_acciaio_carbonio.png\nGrafico salvato: scorte_acciaio_inox.png\nGrafico salvato: scorte_rame.png\n2027-06 - ordine: 190000.0 - arrivi: 200000.0 - giacenza: 32294.0 kg\n2027-07 - ordine: 200000.0 - arrivi: 200000.0 - giacenza: 37052.0 kg\n2027-08 - ordine: 210000.0 - arrivi: 190000.0 - giacenza: 63219.0 kg\n2027-09 - ordine: 220000.0 - arrivi: 200000.0 - giacenza: 33676.0 kg\n2027-08 - giacenza base: 33219.0 - giacenza anticipata: 63219.0 - differenza: 30000.0 kg\n2027-09 - giacenza base: 33676.0 - giacenza anticipata: 33676.0 - differenza: 0.0 kg\nConfronto salvato: confronto_scorta_anticipata.csv\nGrafico salvato: confronto_scorta_anticipata.png\nAcquisti totali piano base: 2350000.0 kg\nAcquisti totali anticipati: 2350000.0 kg\nScenario anticipato: bilanci corretti\nScenario anticipato - mesi con arretrati: 0\n",
+      "stderr": ""
+    },
+    {
+      "file": "07_test_risultati/grafici_dataset.py",
+      "exit_code": 0,
+      "output": "Righe lette dal CSV: 144\nGrafico salvato: grafico_alluminio.png\nGrafico salvato: grafico_acciaio_carbonio.png\nGrafico salvato: grafico_acciaio_inox.png\nGrafico salvato: grafico_rame.png\n",
+      "stderr": ""
+    },
+    {
+      "file": "07_test_risultati/grafici_previsioni.py",
+      "exit_code": 0,
+      "output": "Righe storiche: 144\nRighe previsionali: 72\nGrafico salvato: storico_previsione_alluminio.png\nGrafico salvato: storico_previsione_acciaio_carbonio.png\nGrafico salvato: storico_previsione_acciaio_inox.png\nGrafico salvato: storico_previsione_rame.png\n",
+      "stderr": ""
+    }
+  ],
+  "csv": [
+    {
+      "file": "02_dataset/domanda_sintetica.csv",
+      "identico": true
+    },
+    {
+      "file": "03_forecasting/previsioni_future.csv",
+      "identico": true
+    },
+    {
+      "file": "04_scorte/pianificazione_iniziale.csv",
+      "identico": true
+    },
+    {
+      "file": "07_test_risultati/confronto_metodi.csv",
+      "identico": true
+    },
+    {
+      "file": "07_test_risultati/confronto_scorta_anticipata.csv",
+      "identico": true
+    },
+    {
+      "file": "07_test_risultati/metodi_selezionati.csv",
+      "identico": true
+    },
+    {
+      "file": "07_test_risultati/simulazione_scorte.csv",
+      "identico": true
+    }
+  ],
+  "grafici_generati": 13
+}

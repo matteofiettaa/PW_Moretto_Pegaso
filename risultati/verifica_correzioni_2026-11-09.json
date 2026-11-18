@@ -1,0 +1,48 @@
+{
+  "data": "2026-11-09",
+  "ambito": "Tre correzioni di rientro negli script scorte; testo esplicativo dashboard; nessuna formula modificata",
+  "script": [
+    {
+      "file": "04_scorte/pianificazione_scorte.py",
+      "exit_code": 0
+    },
+    {
+      "file": "04_scorte/simulazione_scorte.py",
+      "exit_code": 0
+    }
+  ],
+  "csv_confrontati": 7,
+  "csv_modificati": [],
+  "dashboard": {
+    "caso": "acciaio_carbonio base",
+    "eccezioni": 0,
+    "motivazione_anticipo_presente": true,
+    "metriche": [
+      {
+        "label": "Quantità da ordinare (kg)",
+        "value": "180000.0"
+      },
+      {
+        "label": "Coil da ordinare",
+        "value": "18"
+      },
+      {
+        "label": "Lead time (mesi)",
+        "value": "2"
+      },
+      {
+        "label": "Primo ordine (kg)",
+        "value": "180000.0"
+      },
+      {
+        "label": "Coil del primo ordine",
+        "value": "18"
+      },
+      {
+        "label": "Mesi con arretrati",
+        "value": "0"
+      }
+    ]
+  },
+  "limiti": "Controllo mirato; non ripetuti tutti gli scenari, nessuna validazione del servizio 95% o controllo antiplagio."
+}

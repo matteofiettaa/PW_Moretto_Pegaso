@@ -1,0 +1,59 @@
+{
+  "data": "2026-11-09",
+  "modifica": "Rinomina cartelle e accorpamento LEGGIMI nel README",
+  "script": [
+    {
+      "file": "dati/genera_dataset.py",
+      "exit_code": 0
+    },
+    {
+      "file": "previsioni/confronto_metodi.py",
+      "exit_code": 0
+    },
+    {
+      "file": "previsioni/previsioni_future.py",
+      "exit_code": 0
+    },
+    {
+      "file": "scorte/pianificazione_scorte.py",
+      "exit_code": 0
+    },
+    {
+      "file": "scorte/simulazione_scorte.py",
+      "exit_code": 0
+    },
+    {
+      "file": "risultati/grafici_dataset.py",
+      "exit_code": 0
+    },
+    {
+      "file": "risultati/grafici_previsioni.py",
+      "exit_code": 0
+    }
+  ],
+  "dashboard": [
+    {
+      "materiale": "alluminio",
+      "eccezioni": 0,
+      "schede": 3
+    },
+    {
+      "materiale": "acciaio_carbonio",
+      "eccezioni": 0,
+      "schede": 3
+    },
+    {
+      "materiale": "acciaio_inox",
+      "eccezioni": 0,
+      "schede": 3
+    },
+    {
+      "materiale": "rame",
+      "eccezioni": 0,
+      "schede": 3
+    }
+  ],
+  "csv_confrontati": 7,
+  "csv_modificati": [],
+  "limiti": "Controllo dei nuovi percorsi e delle quattro selezioni base; non ripetute tutte le combinazioni dei parametri e non verificata identità visiva dei PNG."
+}

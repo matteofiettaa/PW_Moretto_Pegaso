@@ -1,0 +1,304 @@
+{
+  "data": "2026-11-17T08:11:28+01:00",
+  "commit_base": "09962725d3fb71566a1301c802d9f8ce8a2c159f",
+  "python": "3.12.6",
+  "sistema": "Darwin",
+  "dipendenze": {
+    "streamlit": "1.66.1",
+    "matplotlib": "3.11.2"
+  },
+  "ambiente": "Copia isolata dei file del repository con commenti aggiunti; ambiente Python già installato.",
+  "codice_invariato": [
+    {
+      "file": "dashboard/app.py",
+      "sintassi": "valida",
+      "struttura_eseguibile_identica": true,
+      "sha256": "3ba4c7ef4f7a9eb487dc4e80f25af0aa0ee5dc8990fe976a3556ead281d989dc"
+    },
+    {
+      "file": "dati/genera_dataset.py",
+      "sintassi": "valida",
+      "struttura_eseguibile_identica": true,
+      "sha256": "5b3cd8a6a53e6c58fca3b4760d9a7d2859e01cb777f87a890cf40fa1620b33ca"
+    },
+    {
+      "file": "previsioni/confronto_metodi.py",
+      "sintassi": "valida",
+      "struttura_eseguibile_identica": true,
+      "sha256": "3c812eedf9668d3a6627528acfd8003d28224dc2e454244c96f007f3db00a94c"
+    },
+    {
+      "file": "previsioni/previsioni_future.py",
+      "sintassi": "valida",
+      "struttura_eseguibile_identica": true,
+      "sha256": "00eae8fd238156e792f6256c42c374ad538ef3c835d92e4afd670a5d8bd4a93b"
+    },
+    {
+      "file": "risultati/grafici_dataset.py",
+      "sintassi": "valida",
+      "struttura_eseguibile_identica": true,
+      "sha256": "4a5215c923829b408dc68a8e69bba7d1f65054e6d3f65724a643ea8bd4f9b38c"
+    },
+    {
+      "file": "risultati/grafici_previsioni.py",
+      "sintassi": "valida",
+      "struttura_eseguibile_identica": true,
+      "sha256": "c71451caca99a7c7574742abc45e18b68305ace8aace6879860577badce51b47"
+    },
+    {
+      "file": "scorte/pianificazione_scorte.py",
+      "sintassi": "valida",
+      "struttura_eseguibile_identica": true,
+      "sha256": "2cab6e5855cc8f750c9257630952cfa74b7c288a64265b628e69edbd56de82c5"
+    },
+    {
+      "file": "scorte/simulazione_scorte.py",
+      "sintassi": "valida",
+      "struttura_eseguibile_identica": true,
+      "sha256": "b25c9f74497be8135cf9a7229b7dd6ac9d9d8f601cda3c16cdef1e3ccd554afa"
+    }
+  ],
+  "script_eseguiti": [
+    {
+      "file": "dati/genera_dataset.py",
+      "esito": "superato"
+    },
+    {
+      "file": "previsioni/confronto_metodi.py",
+      "esito": "superato"
+    },
+    {
+      "file": "previsioni/previsioni_future.py",
+      "esito": "superato"
+    },
+    {
+      "file": "scorte/pianificazione_scorte.py",
+      "esito": "superato"
+    },
+    {
+      "file": "scorte/simulazione_scorte.py",
+      "esito": "superato"
+    },
+    {
+      "file": "risultati/grafici_dataset.py",
+      "esito": "superato"
+    },
+    {
+      "file": "risultati/grafici_previsioni.py",
+      "esito": "superato"
+    }
+  ],
+  "csv": [
+    {
+      "file": "dati/domanda_sintetica.csv",
+      "identico_byte_per_byte": true,
+      "righe": 144,
+      "sha256": "738ff9bf8905f42900fbe42a3fa577c9949d24a7452e14c7bafe417b589c0adf"
+    },
+    {
+      "file": "previsioni/previsioni_future.csv",
+      "identico_byte_per_byte": true,
+      "righe": 72,
+      "sha256": "fa2b3cf102dcaba1ed73ae1f9d3f109089a1290ada63cda75cb0d9ebfa53705e"
+    },
+    {
+      "file": "risultati/confronto_metodi.csv",
+      "identico_byte_per_byte": true,
+      "righe": 16,
+      "sha256": "faa5c19e302ff7e94313a9db22a5970b03bf6cc289e3e0b1faf5dcc4e69cd039"
+    },
+    {
+      "file": "risultati/confronto_scorta_anticipata.csv",
+      "identico_byte_per_byte": true,
+      "righe": 12,
+      "sha256": "2c8f8a17534e63f44eb4f897aecd2ed8cc028d5160772d74b3d046c5c2f394d5"
+    },
+    {
+      "file": "risultati/metodi_selezionati.csv",
+      "identico_byte_per_byte": true,
+      "righe": 4,
+      "sha256": "b51b08452fa875103ac62e7712cf3af7bc81244148e565e4f545e2797b53be16"
+    },
+    {
+      "file": "risultati/simulazione_scorte.csv",
+      "identico_byte_per_byte": true,
+      "righe": 48,
+      "sha256": "3a7aed9f9e0bc681534caeb36a631085645bb9126f9858d231d0efc5ea2edcb1"
+    },
+    {
+      "file": "scorte/pianificazione_iniziale.csv",
+      "identico_byte_per_byte": true,
+      "righe": 4,
+      "sha256": "87f3353c0010ed11b94acbd1ee52e5e696c4fef0552ce84bfd12d8f5a044b256"
+    }
+  ],
+  "grafici_generati": [
+    "risultati/confronto_scorta_anticipata.png",
+    "risultati/grafico_acciaio_carbonio.png",
+    "risultati/grafico_acciaio_inox.png",
+    "risultati/grafico_alluminio.png",
+    "risultati/grafico_rame.png",
+    "risultati/scorte_acciaio_carbonio.png",
+    "risultati/scorte_acciaio_inox.png",
+    "risultati/scorte_alluminio.png",
+    "risultati/scorte_rame.png",
+    "risultati/storico_previsione_acciaio_carbonio.png",
+    "risultati/storico_previsione_acciaio_inox.png",
+    "risultati/storico_previsione_alluminio.png",
+    "risultati/storico_previsione_rame.png"
+  ],
+  "dashboard": {
+    "casi": [
+      {
+        "materiale": "alluminio",
+        "scenario": "base",
+        "lead_time": 3,
+        "trend_percento": 0.0,
+        "stagionalita_percento": 0,
+        "oscillazione_percento": 0,
+        "esito": "superato",
+        "primo_ordine_kg": 45000.0,
+        "mesi_con_arretrati": 0
+      },
+      {
+        "materiale": "alluminio",
+        "scenario": "limite_minimo",
+        "lead_time": 1,
+        "trend_percento": -2.0,
+        "stagionalita_percento": 40,
+        "oscillazione_percento": 50,
+        "esito": "superato",
+        "primo_ordine_kg": 0.0,
+        "mesi_con_arretrati": 2
+      },
+      {
+        "materiale": "alluminio",
+        "scenario": "limite_massimo",
+        "lead_time": 6,
+        "trend_percento": 2.0,
+        "stagionalita_percento": 40,
+        "oscillazione_percento": 50,
+        "esito": "superato",
+        "primo_ordine_kg": 215000.0,
+        "mesi_con_arretrati": 3
+      },
+      {
+        "materiale": "acciaio_carbonio",
+        "scenario": "base",
+        "lead_time": 2,
+        "trend_percento": 0.0,
+        "stagionalita_percento": 0,
+        "oscillazione_percento": 0,
+        "esito": "superato",
+        "primo_ordine_kg": 180000.0,
+        "mesi_con_arretrati": 0
+      },
+      {
+        "materiale": "acciaio_carbonio",
+        "scenario": "limite_minimo",
+        "lead_time": 1,
+        "trend_percento": -2.0,
+        "stagionalita_percento": 40,
+        "oscillazione_percento": 50,
+        "esito": "superato",
+        "primo_ordine_kg": 0.0,
+        "mesi_con_arretrati": 2
+      },
+      {
+        "materiale": "acciaio_carbonio",
+        "scenario": "limite_massimo",
+        "lead_time": 6,
+        "trend_percento": 2.0,
+        "stagionalita_percento": 40,
+        "oscillazione_percento": 50,
+        "esito": "superato",
+        "primo_ordine_kg": 1070000.0,
+        "mesi_con_arretrati": 4
+      },
+      {
+        "materiale": "acciaio_inox",
+        "scenario": "base",
+        "lead_time": 1,
+        "trend_percento": 0.0,
+        "stagionalita_percento": 0,
+        "oscillazione_percento": 0,
+        "esito": "superato",
+        "primo_ordine_kg": 8000.0,
+        "mesi_con_arretrati": 0
+      },
+      {
+        "materiale": "acciaio_inox",
+        "scenario": "limite_minimo",
+        "lead_time": 1,
+        "trend_percento": -2.0,
+        "stagionalita_percento": 40,
+        "oscillazione_percento": 50,
+        "esito": "superato",
+        "primo_ordine_kg": 8000.0,
+        "mesi_con_arretrati": 1
+      },
+      {
+        "materiale": "acciaio_inox",
+        "scenario": "limite_massimo",
+        "lead_time": 6,
+        "trend_percento": 2.0,
+        "stagionalita_percento": 40,
+        "oscillazione_percento": 50,
+        "esito": "superato",
+        "primo_ordine_kg": 64000.0,
+        "mesi_con_arretrati": 5
+      },
+      {
+        "materiale": "rame",
+        "scenario": "base",
+        "lead_time": 6,
+        "trend_percento": 0.0,
+        "stagionalita_percento": 0,
+        "oscillazione_percento": 0,
+        "esito": "superato",
+        "primo_ordine_kg": 1500.0,
+        "mesi_con_arretrati": 0
+      },
+      {
+        "materiale": "rame",
+        "scenario": "limite_minimo",
+        "lead_time": 1,
+        "trend_percento": -2.0,
+        "stagionalita_percento": 40,
+        "oscillazione_percento": 50,
+        "esito": "superato",
+        "primo_ordine_kg": 0.0,
+        "mesi_con_arretrati": 0
+      },
+      {
+        "materiale": "rame",
+        "scenario": "limite_massimo",
+        "lead_time": 6,
+        "trend_percento": 2.0,
+        "stagionalita_percento": 40,
+        "oscillazione_percento": 50,
+        "esito": "superato",
+        "primo_ordine_kg": 2500.0,
+        "mesi_con_arretrati": 0
+      }
+    ],
+    "controlli": [
+      "avvio senza eccezioni e tre schede",
+      "12 mesi per scenario",
+      "valori finiti e quantità non negative",
+      "bilancio giacenza e arretrati",
+      "bilancio pipeline",
+      "ordini in coil interi",
+      "consegne secondo lead time",
+      "scenario neutro uguale al CSV base per giacenza, pipeline e arretrati"
+    ]
+  },
+  "limiti": [
+    "Nessuna nuova installazione delle dipendenze.",
+    "Prove AppTest sui dati e sull’esecuzione dell’interfaccia: nessuna revisione visiva completa del browser.",
+    "Le immagini sono state rigenerate, senza confronto visivo pixel per pixel.",
+    "Le prove non coprono tutte le combinazioni degli scenari, Windows o Linux.",
+    "Il livello di servizio del 95% non è dimostrato da queste prove."
+  ],
+  "esito": "superato"
+}

@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+.env
+.env.*
+.streamlit/secrets.toml
+.vscode/
+.idea/
+00_documentazione_ufficiale/
+01_pianificazione/
+06_relazione/
+08_repository/
+PROJECT_CONTEXT.md
+*.zip

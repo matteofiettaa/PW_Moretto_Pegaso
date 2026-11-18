@@ -1,0 +1,37 @@
+{
+  "data": "2026-11-08",
+  "tipo": "Confronto AppTest prima/dopo modifica della sola presentazione",
+  "casi": [
+    {
+      "materiale": "alluminio",
+      "lead_time": 3,
+      "calcoli_e_tabelle_identici": true,
+      "dettagli_chiusi_all_avvio": true
+    },
+    {
+      "materiale": "acciaio_carbonio",
+      "lead_time": 2,
+      "calcoli_e_tabelle_identici": true,
+      "dettagli_chiusi_all_avvio": true
+    },
+    {
+      "materiale": "acciaio_inox",
+      "lead_time": 1,
+      "calcoli_e_tabelle_identici": true,
+      "dettagli_chiusi_all_avvio": true
+    },
+    {
+      "materiale": "rame",
+      "lead_time": 6,
+      "calcoli_e_tabelle_identici": true,
+      "dettagli_chiusi_all_avvio": true
+    },
+    {
+      "materiale": "alluminio",
+      "lead_time": 6,
+      "calcoli_e_tabelle_identici": true,
+      "dettagli_chiusi_all_avvio": true
+    }
+  ],
+  "limiti": "Controllati cinque casi, non tutte le combinazioni dei parametri."
+}

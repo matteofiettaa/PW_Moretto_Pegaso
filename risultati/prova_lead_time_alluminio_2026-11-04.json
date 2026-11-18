@@ -1,0 +1,44 @@
+{
+  "data_verifica": "2026-11-04",
+  "modalita": "Controllo della dashboard Streamlit in esecuzione tramite interfaccia e valori accessibili dei grafici",
+  "materiale": "alluminio",
+  "parametri_comuni": {
+    "giacenza_iniziale_kg": 150000,
+    "peso_coil_kg": 5000,
+    "trend_aggiuntivo_percentuale": 0,
+    "stagionalita_aggiuntiva_percentuale": 0,
+    "oscillazione_percentuale": 0,
+    "revisione_mesi": 1,
+    "mesi_simulati": 12,
+    "ordini_precedenti": 0,
+    "arretrati_iniziali": 0
+  },
+  "piano_base": {
+    "lead_time_mesi": 3,
+    "primo_ordine_kg": 45000,
+    "coil_primo_ordine": 9,
+    "mesi_con_arretrati": 0,
+    "scorta_sicurezza_kg_visualizzata": 4278.73,
+    "ciclica_media_riferimento_kg_visualizzata": 24185.54,
+    "pipeline_media_fine_mese_kg_visualizzata": 133750
+  },
+  "scenario": {
+    "lead_time_mesi": 6,
+    "primo_ordine_kg": 195000,
+    "coil_primo_ordine": 39,
+    "mesi_con_arretrati": 3,
+    "scorta_sicurezza_kg_visualizzata": 5660.23,
+    "ciclica_media_riferimento_kg_visualizzata": 24185.54,
+    "pipeline_media_fine_mese_kg_visualizzata": 307500,
+    "livello_obiettivo_iniziale_kg_visualizzato": 340725.81,
+    "giacenza_minima_kg": 0,
+    "quantita_ordinata_12_mesi_kg": 740000,
+    "arretrati_fine_mese_kg_visualizzati": {
+      "2027-02": 40255.0574861,
+      "2027-03": 88323.4000429,
+      "2027-04": 136593.573874
+    }
+  },
+  "interpretazione": "A parita di giacenza iniziale e senza ordini preesistenti, il maggior lead time lascia tre mesi con arretrati prima dei primi arrivi. Il maggior ordine iniziale non anticipa la consegna.",
+  "limiti": "Singolo scenario deterministico. Non costituisce verifica statistica del livello di servizio o collaudo completo. Valori letti dalla UI, alcuni arrotondati. Gli ordini totali includono consegne oltre l'orizzonte simulato."
+}
